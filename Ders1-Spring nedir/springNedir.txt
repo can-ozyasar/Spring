@@ -30,4 +30,4 @@ AĞACI SPRİNG OLARAK DÜŞÜNÜRSEK DALLARIN HER BİRİNİN GÖREVİ VARDIR .
 BİRİ SECURTY İŞLEMLERİNİ YAPAR BİRİ REST APİ İŞELMLERİNİ YAPAR BİRİ CLAUD İŞLEMLERİNİ YAPAR VS GİBİ GİBİ ...
 
 
-
+microservise mimarisi  çok önemli bir kavramdır projenin küçük modüllerden oluşması sağlanır. 
