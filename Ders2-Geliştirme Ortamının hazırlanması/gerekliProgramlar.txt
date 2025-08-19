@@ -1,0 +1,10 @@
+1) java 17 kuruyoruz  https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+
+2)maven uygulamasını kuruyoruz java dan sonra kurmak gerekiyor ki görsün javayı 
+
+3)spring tools for eclipse kuruyoruz  https://spring.io/tools
+
+
+jdk dosyasında jre ve jvm dosyaları var. 
+jre javarun evrimoment java çalışma ortamı 
+jvm java virtual machine java sanal makinesidir her ortamda çalışabilmesi için gereklidir.

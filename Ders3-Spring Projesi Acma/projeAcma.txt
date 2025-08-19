@@ -1,0 +1,32 @@
+https://start.spring.io/   sayfasına giriyoruz 
+
+project :Maven
+language : Java
+Spring boot: 3.5.4
+
+
+Project Metadata 
+
+group : (bu isim tersten evrilir örnek  com.muhammed )
+artifical:(proje adı ) İlkSprictProjesi
+Name:    İlkSprictProjesi (önemli değil bu isim )
+ Description :  spring projesi nasıl açılır onu görüyoruz 
+ Package Name: otomatik oluşturur üstteki bilgilere göre 
+
+ Packaging jar 
+ java : 17
+ dependencies :(ağacın dalları olarak metoforlaştırdığımız bölüm ) web , webflux , data jpa , h2 , devtools , lombok , test
+
+ Generate
+
+indirilen zip dosyasını aç 
+
+
+spring uygulamasın gel 
+
+file>import a tıkla 
+existing maven Project i seç 
+brovse den ayıkladığımız projeyi  seç
+ok finish 
+
+proje dahil edildir
