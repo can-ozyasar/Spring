@@ -1,0 +1,33 @@
+Spring, Java'nın vazgeçilmez bir framework'üdür ve günümüzde iş ilanlarında sıklıkla karşınıza çıkmaktadır.
+
+Spring Framework, Java ile tam uyumlu çalışarak projelerde esneklik ve verimlilik sağlar. Geliştiricilere geniş bir yelpaze sunar.
+02:21
+Spring Framework, modüler yapısı sayesinde birçok farklı özelliği barındıran bir çatı sunar. Her bir modül, bağımsız olarak kullanılabilir ve projeye ihtiyaç duyulan parçalar eklenebilir.
+02:39
+Spring Framework'in içinde farklı modüller bulunur, örneğin JDBC, ORM ve Security gibi. Bu modüller, projeye özel ihtiyaçlara göre seçilerek kullanılabilir.
+03:41
+Her bir modülün kendi başına bir görevi vardır. Örneğin, bazıları REST API geliştirmek için, bazıları ise veri tabanı bağlantıları için kullanılır.
+04:18
+Spring, projelerin daha modern ve kompakt bir şekilde geliştirilmesine olanak tanır. Bu, güncel teknolojilere uyum sağlama açısından önemlidir.
+04:42
+"Dependency injection" ve "inversion of Control", Spring framework'ünün temel taşlarıdır. Bu kavramlar, esnek ve güvenilir projeler geliştirilmesine olanak tanır.
+05:22
+Spring, bağımlılıkları yönetmek için bir konteyner kullanır. Bu sayede farklı sınıflar arasında nesne paylaşımı kolaylaşır.
+
+ORM gibi bileşenler, veri erişim katmanında işlevsellik sağlar. Spring, mikro servis mimarisi ile modern yazılım geliştirme süreçlerine uyum sağlar.
+07:06
+Mikroservis mimarisi, projeleri küçük parçalara bölerek yönetmeyi sağlar. Bu mimari sayesinde daha kaliteli ve ölçeklenebilir yazılımlar geliştirmek mümkündür.
+07:17
+Mikroservislerin avantajlarından biri, projelerin daha esnek bir şekilde yönetilmesidir. Bu sayede geliştiriciler, projeleri daha iyi organize edebilirler.
+07:35
+Spring Cloud, mikroservis projelerinin geliştirilmesinde önemli bir araçtır. Geliştiricilerin bu teknolojiyi öğrenmesi, kariyerlerinde büyük fayda sağlayacaktır.
+08:12
+Mikroservis mimarisini anlamak için Java ve Spring öğrenimi gereklidir. Bu eğitimler, geliştiricilere büyük projelerde çalışma fırsatları sunar.
+
+
+
+AĞACI SPRİNG OLARAK DÜŞÜNÜRSEK DALLARIN HER BİRİNİN GÖREVİ VARDIR .
+BİRİ SECURTY İŞLEMLERİNİ YAPAR BİRİ REST APİ İŞELMLERİNİ YAPAR BİRİ CLAUD İŞLEMLERİNİ YAPAR VS GİBİ GİBİ ...
+
+
+
