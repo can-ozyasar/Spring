@@ -1,0 +1,15 @@
+resimde de görüleceği üzere spring content bir kase gibidir  java classları ise fasulyeler gibidir 
+kodda istenen değerleri 
+spring contex ,application contex yada  isimleri ile adlanladrılır 
+
+class @Bean ile tanımlanmış beanlarin ıceriğini spring content kullanarak alırız (kaseye koyma )
+
+
+eklemezsek ne olur /  ne işimize yarar eklemek? 
+
+boyutlar büyüdüğü zaman yönetimi kolaylaştırmak kolaylaştırmak için kullanılır
+
+
+örnek dolu dolu bir sınıfımız olsun her kullanmak gereken farklı bir sınıfta bu clası tekrar newleyip  içini doldurmamız gerekirdi 
+şimdi ise tek bir doldurma işlemi ile gerkli tüm classlarda kulanıyoruz .kod uzamasını engeller
+tek bir nesne oluşturup  tüm classlarda kullanabiliriz
