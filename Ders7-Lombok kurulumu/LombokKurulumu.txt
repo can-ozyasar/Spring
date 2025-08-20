@@ -1,0 +1,63 @@
+
+
+İlgili medium yazısı  :  https://medium.com/kodgemisi/project-lombok-6d2490df8adf  
+
+lombok indir https://projectlombok.org/download
+ kurulum aşamasında  spring tools idesini seç 
+
+ lombok.jar dosyasını  java dosyasının üst klasöründe olacak şekilde kopyalayın.
+ ideden çıkıp tekrar başlatın 
+ projeyi rebuild edin 
+
+
+
+
+yeni bir spring projesi oluşturduk 
+import ile içeri aktardık 
+sağ tık maven > update maven > force yi tıklayıp ok bastık (bu jar dosyalarını update eder sorun olmaması için )
+
+pom.xml içine lombok kütüphanesi gelmeli 
+<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+        maven dependencies kısmına lombok kütüphanesi gelmiştir zaten 
+
+        istenen clasın üzerine @Getter yazılır space+entere basınca otomatik olark şu format oluşur 
+
+
+
+        import lombok.Getter; << yeni geldi 
+
+@Getter   << biz yazdık space+entere bastık
+public class user { << bu klasik clasımız işte 
+	
+	
+	private String FirstaName;
+
+}
+
+
+kullanılabilecekler : 
+Getter
+Setter
+AllArgsConstructor
+RequiredArgsConstructor
+EqualsAndHashCode
+Data
+ToString
+
+
+ 
+ORTOMATİK TAMAMLAMA ÖZELLİĞİ AÇMA https://stackoverflow.com/questions/6912169/eclipse-enable-autocomplete-content-assist
+
+
+
+Eclipse > Preferences > Java > Editor > Content Assist
+Auto Activation > Auto activation triggers for Java
+Enter all the characters you want to trigger autocomplete, such as the following:
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ._
+
+Now any time that you type any of these characters, Eclipse will trigger autocomplete suggestions based on the context.
