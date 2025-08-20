@@ -1,11 +1,15 @@
 package com.canoz.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Getter
-public class user {
-	
-	
-	private String FirstaName;
-	 
+@Getter 
+@Setter 
+@AllArgsConstructor 
+@NoArgsConstructor
+public class User {
+
+	private String firstName;
 }

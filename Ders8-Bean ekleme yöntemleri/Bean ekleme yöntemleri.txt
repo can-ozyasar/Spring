@@ -1,0 +1,31 @@
+
+
+@Configuration
+public class AppConfig {
+	
+	
+	// eğer userservice ye kayıt etmek istiyorsak @bean kullanmalıyız
+	
+    @Bean 
+	public UserService userService() { // dönüş tipi dönülecek tipte olması gerekiyor
+	 
+	  
+		UserService userService1=new UserService();
+		List<User> userList =new ArrayList<>();
+		
+		userList.add(new User("Ahmet"));
+		userList.add(new User("Ahmet"));
+
+	
+		userService1.setUserList(userList);
+		
+		return userService1;
+		
+		
+		
+ }
+}
+
+
+bu hali ile spring olarak çalıştırılır ve bu nesne userservice ye kayıt edilir.
+kullanmak için 
