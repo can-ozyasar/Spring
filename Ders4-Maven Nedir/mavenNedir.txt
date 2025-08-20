@@ -1,0 +1,8 @@
+Maven nedir ? 
+Maven gibi bağımlılık yönetim araçları yokken  geliştiriciler projelerine başka bir freamwork yada kütüphaneti eklemel istediğimde o projenin sitesinden jar dosyalarını  indirip kendi projelerine ekliyorlardı 
+maven bizim için kendi yüklüyor bu dosyaları 
+
+
+
+maven bu işi nasıl yapıyor ?
+ developer pom.xml içine dependenciese klediğinde yukarıdak işlem sonrasında  maven pom.xml içine bakar daha sonra  bilgisayarınızın içerisimde yer alan local maven repository  depemdency dosyalarını arar eğer bulursa oradan alarak projeye ekler bulamazsa maven centeral  repo adresine bakar 
