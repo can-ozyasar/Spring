@@ -1,0 +1,7 @@
+spring dosyası çalıştırıldığı zaman tomcat started on port 8080 yazar 
+tomcat bir uygulama sunucusudur .birçok alternatifi vardır .
+yazılan uygulamayı derler ve çalıştırılabilir hale getirir 
+
+
+eğer eclipse kulansaydık bu servisi manuel olarak başlatmamız gerekecekti 
+ama Spring tools idesi  ile açtığımızda tomcat  otomatik olarak başlatılır .8080
