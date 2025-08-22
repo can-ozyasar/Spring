@@ -1,6 +1,7 @@
 package com.canoz.services;
 
 import java.util.List;
+import java.util.concurrent.Flow.Publisher;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,15 @@ public class EmployeeService {
 		
 		
 		return employeeRepository.getAllEmployeList();   // bir üst katmandan gelen değeri döndür bir alt katman alacak   
+	}
+	
+	
+	
+	
+	public Employee getEmployeeById(String id) { // bir üstten gelen isteği  geri dönür
+		
+	
+		return employeeRepository.getEmployeeById(id);
 	}
 
 }

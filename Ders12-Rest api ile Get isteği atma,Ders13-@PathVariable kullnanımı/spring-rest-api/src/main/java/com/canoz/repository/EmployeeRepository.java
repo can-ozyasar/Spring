@@ -1,5 +1,6 @@
 package com.canoz.repository;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,25 @@ public class EmployeeRepository {
 		
 		return employeList;
 		
+	}
+	
+	
+	public Employee getEmployeeById(String id){ // dışarıdan gelen id yi bulunca döndürür 
+		
+		Employee findEmployee =null;
+	for (Employee employee :employeList) {
+		if(id.equals(employee.getId())) {
+			findEmployee=employee;
+			break;
+			
+			
+		}
 		
 	}
+	return findEmployee;
+	}
+	
+	
+	
 
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,9 +28,22 @@ public class RestEmployeeController { // bu isimlendirme formatıdır
 	public List<Employee> getAllEmployeeList() {
 		
 		// sen dışardan istemciden isteği aldın  bu isteği servise yönlendir 
-		return 	employeeService.getAllEmployeeList() //// üsten gelen değeri o da bir alta döndürüyor yani kullanıcıya 
-;
+		return 	employeeService.getAllEmployeeList(); //// üsten gelen değeri o da bir alta döndürüyor yani kullanıcıya 
+
+	}  
+	
+	
+	@GetMapping(path ="/employee-list/{id}")
+	public Employee getEmployeeById(@PathVariable(name = "id" ,required = true) String id) {
+		 ////   @ path variable ile  required = true zorunulu olarak id değeri sana gelecek anlamında 
+		 /// istekte olan { id} değerini tutmak için kullanırız pathvariable yi , name ye de istekteki ismi veriyoruz  gelen değer aynı isimli olan id ile eşleşir  
+		return employeeService.getEmployeeById(id);
+		
+		
+		
 	}
+	
+	
 	
 	
 }
