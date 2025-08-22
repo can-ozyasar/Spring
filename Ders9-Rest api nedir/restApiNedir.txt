@@ -1,0 +1,39 @@
+Tabii muhammed, işte REST API hakkında kısa ve öz bir hatırlatıcı not. Hem temel kavramları açıklar hem de ileride göz atmak için kullanışlı olur:
+
+---
+
+📌 **REST API – Hatırlatıcı Not**
+
+**REST (Representational State Transfer)**:  
+Web servisleriyle iletişim kurmak için kullanılan bir mimari stildir. İnternet üzerindeki kaynaklara erişimi sade ve standart hale getirir.
+
+**API (Application Programming Interface)**:  
+Farklı yazılımların birbiriyle konuşmasını sağlayan arayüzdür. REST API, bu iletişimi HTTP protokolü üzerinden sağlar.
+
+---
+
+🔹 **Temel Kavramlar:**
+
+- **Resource (Kaynak)**:  
+  Her şey bir kaynaktır (örneğin: kullanıcı, ürün, yazı). Her kaynağın bir URL’si vardır.
+
+- **HTTP Metodları**:  
+  - `GET`: Veri alır  
+  - `POST`: Yeni veri oluşturur  
+  - `PUT`: Var olan veriyi günceller  
+  - `DELETE`: Veriyi siler
+
+- **Stateless (Durumsuzluk)**:  
+  Her istekte gerekli tüm bilgi gönderilir. Sunucu, önceki istekleri hatırlamaz.
+
+- **JSON (JavaScript Object Notation)**:  
+  REST API’lerde veri genellikle JSON formatında gönderilir ve alınır.
+
+---
+
+🧠 **Kısaca**:  
+REST API, web uygulamalarının birbirleriyle sade ve düzenli bir şekilde veri alışverişi yapmasını sağlar. Kod yazarken bir servise veri göndermek, almak, güncellemek ya da silmek için REST API kullanılır.
+
+---
+
+İstersen bu notu daha teknik örneklerle genişletebilirim ya da Python ile nasıl kullanıldığını gösterebilirim. Hangisine geçelim?

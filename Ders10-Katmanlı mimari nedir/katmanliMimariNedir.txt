@@ -1,0 +1,45 @@
+Elbette muhammed, işte yazılım geliştirmede sıkça kullanılan **katmanlı mimari** hakkında kısa ve öz bir açıklayıcı metin:
+
+---
+
+📘 **Katmanlı Mimari – Temel Bilgilendirme Notu**
+
+**Katmanlı mimari**, yazılım sistemlerini daha yönetilebilir, test edilebilir ve sürdürülebilir hale getirmek için kullanılan bir tasarım yaklaşımıdır. Uygulama, birbirinden ayrılmış katmanlara bölünerek her katmanın belirli bir sorumluluğu olur.
+
+---
+
+🔹 **Temel Katmanlar:**
+
+1. **Presentation Layer (Sunum Katmanı)**  
+   - Kullanıcı arayüzünü içerir.  
+   - Kullanıcının sistemle etkileşime geçtiği yerdir (örneğin: web sayfası, mobil ekran).
+
+2. **Business Logic Layer (İş Mantığı Katmanı)**  
+   - Uygulamanın kurallarını ve işlemlerini barındırır.  
+   - “Ne yapılmalı?” sorusunun cevabını verir.
+
+3. **Data Access Layer (Veri Erişim Katmanı)**  
+   - Veritabanı ile iletişimi sağlar.  
+   - Veri okuma, yazma, güncelleme işlemleri burada gerçekleşir.
+
+4. **Database Layer (Veritabanı Katmanı)**  
+   - Fiziksel verilerin saklandığı yerdir.  
+   - SQL veya NoSQL gibi sistemler kullanılır.
+
+---
+
+🔧 **Avantajları:**
+
+- Kodun okunabilirliği ve bakımı kolaylaşır  
+- Her katman bağımsız test edilebilir  
+- Değişiklikler daha az riskle yapılabilir  
+- Takım çalışmasında görev dağılımı kolaylaşır
+
+---
+
+🧠 **Kısaca**:  
+Katmanlı mimari, yazılımı mantıksal bölümlere ayırarak karmaşıklığı azaltır. Her katman kendi işini yapar, böylece sistem daha sağlam ve esnek olur.
+
+---
+
+İstersen bu yapıyı bir örnek proje üzerinden adım adım inceleyebiliriz ya da Python/Java gibi dillerde nasıl uygulanır, onu gösterebilirim. Hangisi ilgini çeker?
