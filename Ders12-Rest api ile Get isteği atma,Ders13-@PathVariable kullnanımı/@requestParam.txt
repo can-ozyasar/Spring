@@ -1,0 +1,3 @@
+http://localhost:8080/rest/api/employee-list?firstName=Can&lastName=Ozyasar
+
+bu şekilde soru işareti ile başlanır isteğe değişken ismi değeri formatında  & işareti ile özellikler artırılabilir . şu özellikte olan ve şu özellikte olan ve ...

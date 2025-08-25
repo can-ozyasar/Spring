@@ -15,10 +15,11 @@ public class Appconfig {
 	public List<Employee> employeeList() {
 		
 		List<Employee> employeeList= new ArrayList<>();
-		employeeList.add(new Employee("1","Ensar","Kurban"));
-		employeeList.add(new Employee("2","Kemal","Sansar"));
-		employeeList.add(new Employee("3","Bora","AKYAZI"));
-		employeeList.add(new Employee("4","BerkTuğ","ÖZASLAN"));
+		employeeList.add(new Employee("1","Can","Ozyasar"));
+		employeeList.add(new Employee("2","Ensar","Kurban"));
+		employeeList.add(new Employee("3","Kemal","Sansar"));
+		employeeList.add(new Employee("4","Bora","AKYAZI"));
+		employeeList.add(new Employee("5","BerkTuğ","ÖZASLAN"));
 		
 		return employeeList;  //// DATABASE DEN DÖNMÜŞ DEĞER GİBİ OLSUN BU 
 		

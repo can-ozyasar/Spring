@@ -29,16 +29,4 @@ existing maven Project i seç
 brovse den ayıkladığımız projeyi  seç
 ok finish 
 
-proje dahil edildir
-
-
-
-spring projesi Tomcat started on port 8080 ile çalıştırılır .
-
-
- .   ____           _            _ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
+proje dahil edildi

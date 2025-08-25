@@ -1,5 +1,6 @@
 package com.canoz.repository;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -37,6 +38,45 @@ public class EmployeeRepository {
 		
 	}
 	return findEmployee;
+	}
+	
+	public List<Employee> getEmployeeWithParams(String firstName, String lastName){
+		
+		List<Employee> employeeWithParams=new ArrayList<>();
+		
+		if(firstName==null&&lastName==null)  // istekte her iki değer yok ise listenin  tamamını dön 
+			employeeWithParams= employeList;
+		
+		
+		
+		for (Employee employee : employeList) {
+			
+			if(firstName!=null&& lastName!=null) { // iki değer de dolu ise varsa dön 
+				if(employee.getFirstName().equalsIgnoreCase(firstName) && employee.getLastName().equalsIgnoreCase(lastName)) {
+					
+					employeeWithParams.add(employee);
+				}
+			}
+			
+			if(firstName!=null&& lastName==null) { //firstName var lastName yok ise  >>> değer listede varsa ekle  
+				if(employee.getFirstName().equalsIgnoreCase(firstName) ) {
+					
+					employeeWithParams.add(employee);
+				}
+			}
+			
+			if(firstName==null&& lastName!=null) {  //firstName yok lastName var ise  >>> değer listede varsa ekle 
+				if( employee.getLastName().equalsIgnoreCase(lastName)) {
+					
+					employeeWithParams.add(employee);
+				}
+			}
+				
+			
+		}
+		
+		
+		return employeeWithParams;
 	}
 	
 	
