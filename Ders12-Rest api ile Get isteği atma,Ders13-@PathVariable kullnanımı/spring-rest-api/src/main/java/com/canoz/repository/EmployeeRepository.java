@@ -81,5 +81,19 @@ public class EmployeeRepository {
 	
 	
 	
+	
+	
+	////  POST İLE GELEN VERİYİ KAYDETME 
+	///
+	///
+	
+	
+	public Employee saveEmployee(Employee newEmployee) {
+		employeList.add(newEmployee);
+		return newEmployee;
+	}
+
+	
+	
 
 }
