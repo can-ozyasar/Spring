@@ -92,6 +92,25 @@ public class EmployeeRepository {
 		employeList.add(newEmployee);
 		return newEmployee;
 	}
+	
+	
+	
+	/// DELETE İLE GELEN VERİYİ SİLME 
+	public boolean daleteEmployee(String id) {
+		
+		for (Employee employee : employeList) {
+			if(id.equals(employee.getId())) {
+				employeList.remove(employee);
+				return true;
+			}
+		}
+		
+		
+		return false; // eğer silecek veriyi bulamazsa false döner
+		
+		
+		
+	}
 
 	
 	

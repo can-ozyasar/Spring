@@ -53,5 +53,14 @@ public class EmployeeService {
 	public Employee saveEmployee(Employee newEmployee) {
 		return employeeRepository.saveEmployee(newEmployee);
 	}
+	
+	
+	
+	public boolean daleteEmployee(String id) {
+		return employeeRepository.daleteEmployee(id);
+		
+		
+		
+	}
 
 }
