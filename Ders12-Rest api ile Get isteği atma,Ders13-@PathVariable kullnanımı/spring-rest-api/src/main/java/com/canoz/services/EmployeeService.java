@@ -5,8 +5,11 @@ import java.util.concurrent.Flow.Publisher;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.canoz.model.Employee;
+import com.canoz.model.UpdateEmployeeRequests;
 import com.canoz.repository.EmployeeRepository;
 
 @Service  // servis katmanı olduğunu belirtiyoruz  burda kontrollelr yapılacak 
@@ -31,7 +34,7 @@ public class EmployeeService {
 	
 	
 	
-	
+	//GET
 	public Employee getEmployeeById(String id) { // bir üstten gelen isteği  geri dönür
 		
 	
@@ -40,7 +43,7 @@ public class EmployeeService {
 	
 	
 	
-	
+	// GET
 	public List<Employee> getEmployeeWithParams(String firstName, String lastName){
 		return  employeeRepository.getEmployeeWithParams( firstName,  lastName);
 	}
@@ -49,18 +52,26 @@ public class EmployeeService {
 	
 	
 	
-	
+	// SET
 	public Employee saveEmployee(Employee newEmployee) {
 		return employeeRepository.saveEmployee(newEmployee);
 	}
 	
 	
 	
+	
+	// DELETE 
 	public boolean daleteEmployee(String id) {
 		return employeeRepository.daleteEmployee(id);
 		
 		
 		
 	}
-
+	
+	
+	public Employee updateEmployee(String id, UpdateEmployeeRequests request) {
+		
+		return employeeRepository.updateEmployee(id, request);
+	}
+	
 }

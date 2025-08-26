@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.canoz.model.Employee;
+import com.canoz.model.UpdateEmployeeRequests;
 
 @Repository  // repossitory olarak işaretledik 
 public class EmployeeRepository {
@@ -107,6 +108,48 @@ public class EmployeeRepository {
 		
 		
 		return false; // eğer silecek veriyi bulamazsa false döner
+		
+		
+		
+	}
+	
+	
+	private Employee findEmployeeById(String id) {
+		
+		Employee findEmployee =null;
+		for (Employee employee :employeList) {
+			if(id.equals(employee.getId())) {
+				findEmployee=employee;
+					break;
+				}
+			}
+		return findEmployee;
+				
+				
+	
+	}
+	
+	
+	
+	public Employee updateEmployee( String id ,UpdateEmployeeRequests request) {
+		
+		
+		Employee seciliEmployee=findEmployeeById(id);
+		// id li kişiyi bul dil ve aynı id li yeni birini yeni değerler ile ekle 
+		if(seciliEmployee!=null) {
+			daleteEmployee(id);
+			
+		
+		Employee updateEmployee =new Employee();
+		updateEmployee.setId(id);
+		updateEmployee.setFirstName(request.getFirstName());
+		updateEmployee.setLastName(request.getLastName());
+		
+		employeList.add(updateEmployee);
+		
+		return updateEmployee;
+		}
+		return null;
 		
 		
 		

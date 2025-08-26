@@ -9,12 +9,14 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.canoz.model.Employee;
+import com.canoz.model.UpdateEmployeeRequests;
 import com.canoz.services.EmployeeService;
 
 @RestController  // controller olduğunu belirtmek için "- @restcontroller -"  kullanırız 
@@ -114,6 +116,17 @@ public class RestEmployeeController { // bu isimlendirme formatıdır
 	
 	
 	
+	//          *-* *-* *-* *-* *-* *-* PUT İSTEĞİ *-* *-* *-* *-* *-* *-* *-*
+
+	@PutMapping(path="/update-employee/{id}")
+	public Employee updateEmployee(@PathVariable(name ="id")String id,@RequestBody UpdateEmployeeRequests reques ) {
+		
+		
+		return employeeService.updateEmployee(id, reques);
+	}
+	
+	
+	// PUT (UPDATE) İŞLEMLERİ 
 	
 	
 	
