@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.canoz.controller.IStudentController;
+import com.canoz.dto.DtoStudent;
+import com.canoz.dto.DtoStudentIU;
 import com.canoz.entities.Student;
 import com.canoz.repository.StudentRepository;
 import com.canoz.services.IStudentService;
@@ -28,16 +30,16 @@ public class StudentControllerImpl implements IStudentController{
 
 @PostMapping(path="/save")
 @Override
-public Student saveStudent(@RequestBody  Student student) {
+public DtoStudent saveStudent(@RequestBody  DtoStudentIU dtoStudentIU) {
 	
 	
-	return studentService.saveStudent(student);
+	return studentService.saveStudent(dtoStudentIU);
 }
 
 
 @GetMapping(path="/list")
 @Override
-public List<Student> getAllStudents() {
+public List<DtoStudent                                > getAllStudents() {
 	
 	
 	return studentService.getAllStudents();
@@ -45,7 +47,7 @@ public List<Student> getAllStudents() {
 
 @GetMapping(path="/list/{Id}")
 @Override
-public Student getStudentById(@PathVariable(name="Id") Integer Id) {
+public DtoStudent getStudentById(@PathVariable(name="Id") Integer Id) {
 	return studentService.getStudentById(Id);
 	
 }
@@ -59,9 +61,9 @@ public void deleteStudentById(@PathVariable(name="Id") Integer Id) {
 
 @PutMapping(path="/update/{Id}")
 @Override
-public Student updateStudent(@PathVariable(name="Id") Integer Id, @RequestBody Student updateStudent) {
+public DtoStudent updateStudent(@PathVariable(name="Id") Integer Id, @RequestBody DtoStudentIU dtoUpdateStudentIU) {
 	
-	return studentService.updateStudent(Id, updateStudent);
+	return studentService.updateStudent(Id, dtoUpdateStudentIU);
 }
 
 }

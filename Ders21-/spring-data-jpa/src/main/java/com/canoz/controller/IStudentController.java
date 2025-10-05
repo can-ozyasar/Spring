@@ -2,17 +2,19 @@ package com.canoz.controller;
 
 import java.util.List;
 
+import com.canoz.dto.DtoStudent;
+import com.canoz.dto.DtoStudentIU;
 import com.canoz.entities.Student;
 
 public interface IStudentController {
 
 	
 	
-	public Student saveStudent(Student student);
+	public DtoStudent saveStudent(DtoStudentIU student);
 	
-	public List<Student>getAllStudents();
-	public Student getStudentById(Integer Id);
+	public List<DtoStudent>getAllStudents();
+	public DtoStudent getStudentById(Integer Id);
 	
 	public void deleteStudentById(Integer Id);
-	public Student updateStudent(Integer Id ,Student updateStudent);
+	public DtoStudent updateStudent(Integer Id ,DtoStudentIU updateStudentIU);
 }
