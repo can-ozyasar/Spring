@@ -135,7 +135,7 @@ public class EmployeeRepository {
 		
 		
 		Employee seciliEmployee=findEmployeeById(id);
-		// id li kişiyi bul dil ve aynı id li yeni birini yeni değerler ile ekle 
+		// id li kişiyi bul sil ve aynı id li yeni birini yeni değerler ile ekle 
 		if(seciliEmployee!=null) {
 			daleteEmployee(id);
 			
