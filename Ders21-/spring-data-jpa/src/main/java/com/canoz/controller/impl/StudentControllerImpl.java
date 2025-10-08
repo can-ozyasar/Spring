@@ -20,6 +20,8 @@ import com.canoz.entities.Student;
 import com.canoz.repository.StudentRepository;
 import com.canoz.services.IStudentService;
 
+import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("/rest/api/student")
@@ -30,7 +32,7 @@ public class StudentControllerImpl implements IStudentController{
 
 @PostMapping(path="/save")
 @Override
-public DtoStudent saveStudent(@RequestBody  DtoStudentIU dtoStudentIU) {
+public DtoStudent saveStudent(@RequestBody @Valid DtoStudentIU dtoStudentIU) {
 	
 	
 	return studentService.saveStudent(dtoStudentIU);
@@ -39,7 +41,7 @@ public DtoStudent saveStudent(@RequestBody  DtoStudentIU dtoStudentIU) {
 
 @GetMapping(path="/list")
 @Override
-public List<DtoStudent                                > getAllStudents() {
+public List<DtoStudent > getAllStudents() {
 	
 	
 	return studentService.getAllStudents();
@@ -61,7 +63,7 @@ public void deleteStudentById(@PathVariable(name="Id") Integer Id) {
 
 @PutMapping(path="/update/{Id}")
 @Override
-public DtoStudent updateStudent(@PathVariable(name="Id") Integer Id, @RequestBody DtoStudentIU dtoUpdateStudentIU) {
+public DtoStudent updateStudent(@PathVariable(name="Id") Integer Id, @RequestBody  DtoStudentIU dtoUpdateStudentIU) {
 	
 	return studentService.updateStudent(Id, dtoUpdateStudentIU);
 }
