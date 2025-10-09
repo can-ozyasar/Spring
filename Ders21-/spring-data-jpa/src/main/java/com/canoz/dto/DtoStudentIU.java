@@ -65,7 +65,7 @@ public class DtoStudentIU { // bu class ı şu yüzden açtık
 	///String A = "";  ------- emty
 	
 @NotEmpty(message="FirstName alanı boş bırakılamaz.")
-@Min(value = 3, message = "FirstName değişkeni en az 3 karakter olabilir ") // en az 3 karakter olsun .
+//@Min(value = 3, message = "FirstName değişkeni en az 3 karakter olabilir ") // en az 3 karakter olsun .
 //@Max(value = 10)
 //@Size(min = 3,max = 10) // üsteki ile aynı işlemleri tek bi yerde toplar size 
 private String firstName;
@@ -81,7 +81,7 @@ private  Date birthOfDate;
 @Email(message = "e mail formatınızda hata var !! ")
 private String eMail;
 
-@Size(min=11,max=11 ,message="tckn 11 hane olmalı")
+//@Size(min=11,max=11 ,message="tckn 11 hane olmalı")
 @NotEmpty(message="TCKN alan boş geçilemez")
 private String TcKimlik;
 
