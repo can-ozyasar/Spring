@@ -2,11 +2,24 @@
 
 Spring ekosistemiyle çalışma ve örnek Java uygulamaları için ayrılmış repo.
 
-## Öne Çıkanlar
+## Bu Repo Ne İçin Var?
+Spring ekosistemini öğrenmek ve Java backend geliştirme pratiği yapmak için oluşturuldu.
+
+Bu README'nin amacı; repoya ilk kez gelen birinin projenin neden açıldığını, içinde ne bulunduğunu ve nereden başlaması gerektiğini hızlıca anlamasını sağlamaktır.
+
+## İçerik ve Kapsam
+Bu repoda öne çıkan içerikler şunlardır:
 - Java/Spring öğrenme alanı
 - Backend geliştirme pratikleri için başlangıç
 - İleride modül ve örnek servis eklemeye uygun yapı
-- Kullanılan ana teknolojiler: Java, Maven
+- Maven/Spring tarafında backend geliştirme yapısı
+
+## Kimler İçin Faydalı?
+Frontend/web geliştirme pratiği yapmak, arayüz yapısını incelemek veya projeyi kişiselleştirmek isteyenler için uygundur.
+
+## Kullanılan Teknolojiler
+- Java
+- Maven
 
 ## Kurulum
 ```bash
